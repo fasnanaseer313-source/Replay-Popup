@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Replay RC Experiences</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Replay Logo" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="audience.html" class="nav-link">For Who</a>
+        <a href="index.html#packages" class="nav-link">Packages</a>
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="index.html#contact" class="nav-cta-pill">
+          <span>Book Now</span>
+          <div class="cta-icon"><i class="ph ph-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="height: 100px;"></div>
+
+  <!-- Hook Section -->
+  <section id="hook" class="hook section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/hook_bg_1777623113440.png'); opacity: 0.5;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10 gs-reveal-up">
+      <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem;">When was the last time you <em>actually</em> played?</h2>
+      <p class="section-text mx-auto" style="font-size: 1.5rem; color: var(--text-main); max-width: 800px;">
+        Not scrolling. Not watching.<br>
+        <span style="color: var(--primary); font-weight: 700; font-size: 2rem; display: inline-block; margin-top: 1.5rem;">Actually playing.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-badge">The Truth</div>
+          <h2 class="section-title">We've Forgotten <em>How to Play</em></h2>
+          <p class="section-text">
+            Somewhere between deadlines and endless scrolling, we stopped doing things and started just watching them.
+            <br><br>
+            Screens. Schedules. Same routines. Weekends feel the same.
+          </p>
+        </div>
+        <div class="about-image-wrapper">
+          <div class="about-image" style="background-image: url('assets/experience_bg_1777623144990.png');"></div>
+          <div class="about-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="solution" class="solution section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/solution_bg_1777623129407.png'); opacity: 0.4;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10 gs-reveal-up">
+      <div class="section-badge mx-auto">The Fix</div>
+      <h2 class="section-title" style="margin-bottom: 1rem;">We Make People <em>Play Again</em></h2>
+      <p class="section-text mx-auto" style="font-size: 1.5rem; color: var(--text-main); max-width: 800px;">
+        Not virtual. Not passive.<br>
+        <strong style="color: var(--primary);">Just loud, real-world fun.</strong><br><br>
+        With portable RC arenas that come to you.
+      </p>
+      <div class="hero-actions mt-10" style="justify-content: center;">
+        <a href="index.html#contact" class="btn-primary">
+          <span>Book Your Experience</span>
+          <i class="ph-bold ph-steering-wheel"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Replay Logo" class="logo-img" style="height: 40px;">
+          </a>
+          <p class="footer-desc mt-4">We bring the play to you.<br>Real tracks. Real play. Real fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="audience.html">For Who</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Replay RC Experiences. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

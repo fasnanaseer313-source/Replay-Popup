@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Who | Replay RC Experiences</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.png" alt="Replay Logo" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="experience.html" class="nav-link">Experience</a>
+        <a href="audience.html" class="nav-link active">For Who</a>
+        <a href="index.html#packages" class="nav-link">Packages</a>
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="index.html#contact" class="nav-cta-pill">
+          <span>Book Now</span>
+          <div class="cta-icon"><i class="ph ph-arrow-right"></i></div>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="height: 100px;"></div>
+
+  <!-- Audience Section -->
+  <section id="audience" class="audience section-padding relative">
+    <div class="section-bg" style="background-image: url('assets/audience_bg_1777623161658.png'); opacity: 0.25;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-header text-center">
+        <div class="section-badge mx-auto">The Crowd</div>
+        <h2 class="section-title"><em>Literally</em> Everyone</h2>
+        <p class="section-text mx-auto" style="max-width: 800px; margin-bottom: 4rem;">
+          From a 5-year-old’s birthday to a high-stakes corporate tournament, RC racing is the universal language of fun.
+        </p>
+      </div>
+      
+      <div class="audience-grid">
+        <!-- Kids -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/energy_card_1777623707842.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-smiley"></i></div>
+            <h4>Kids</h4>
+            <p>Eyes wide, hearts racing, screaming with joy. Pure excitement.</p>
+          </div>
+        </div>
+        <!-- Families -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/moments_card_1777623726999.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-users"></i></div>
+            <h4>Families</h4>
+            <p>Finally, something the whole family enjoys together.</p>
+          </div>
+        </div>
+        <!-- Friends -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/fun_card_1777623740913.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-handshake"></i></div>
+            <h4>Friends</h4>
+            <p>Rematches and stories that last forever. Competition & memories.</p>
+          </div>
+        </div>
+        <!-- Teams -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/engagement_bg_1777623177469.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-briefcase"></i></div>
+            <h4>Teams</h4>
+            <p>The team-building that people actually want to do.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Section -->
+  <section id="engagement" class="engagement section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/engagement_bg_1777623177469.png'); opacity: 0.3;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10">
+      <h2 class="section-title">Easy to Start.<br><em>Impossible to Stop.</em></h2>
+      <p class="section-text mx-auto mt-6" style="font-size: 1.5rem; max-width: 800px;">
+        One race becomes five.<br>Five becomes a tournament.<br><br>
+        <span style="color: var(--primary); font-weight: 700;">Bring the energy to your crowd.</span>
+      </p>
+      <div class="hero-actions mt-12" style="justify-content: center;">
+        <a href="index.html#contact" class="btn-primary">
+          <span>Book for Your Group</span>
+          <i class="ph-bold ph-users-three"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="assets/logo.png" alt="Replay Logo" class="logo-img" style="height: 40px;">
+          </a>
+          <p class="footer-desc mt-4">We bring the play to you.<br>Real tracks. Real play. Real fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="about.html">About</a>
+          <a href="experience.html">Experience</a>
+          <a href="audience.html">For Who</a>
+          <a href="index.html#packages">Packages</a>
+          <a href="index.html#features">Features</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Replay RC Experiences. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
