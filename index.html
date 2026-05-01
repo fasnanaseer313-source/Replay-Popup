@@ -568,85 +568,64 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section-padding">
-    <div class="contact-bg" style="background-image: url('assets/contact_bg_1777621293834.png');"></div>
-    <div class="contact-overlay"></div>
+  <section id="contact" class="contact section-padding relative overflow-hidden">
+    <div class="contact-bg" style="background-image: url('assets/auto_bg_1777621262310.png'); opacity: 0.2; filter: brightness(0.6) saturate(0.8);"></div>
+    <div class="contact-overlay" style="background: radial-gradient(circle at center, rgba(13, 8, 4, 0.4) 0%, rgba(13, 8, 4, 0.98) 100%);"></div>
+    
     <div class="container relative z-10">
-      <div class="contact-wrapper">
-        <div class="contact-info gs-reveal-right">
-          <div class="section-badge">Play, Delivered</div>
-          <h2 class="section-title">You Bring the People.<br><em>We'll Bring the Play.</em></h2>
-          <p class="section-text mb-6">We bring the gear, energy, and game plan. Let's create something unforgettable — together.</p>
+      <div class="contact-grid">
+        <!-- Contact Left: Info & Map -->
+        <div class="contact-info-panel">
+          <div class="section-badge mb-4">Contact Replay</div>
+          <h2 class="section-title mb-8">Ready to <em>Replay?</em></h2>
           
-          <div class="hero-actions mt-6" style="margin-bottom: 2rem;">
-            <a href="#contactForm" class="btn-primary" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">
-              <span>Book Now</span>
-            </a>
-            <a href="mailto:hello@replayrc.com" class="btn-secondary">
-              <span>Let's Talk</span>
-            </a>
-          </div>
-          
-          <div class="contact-details-premium mt-8">
-            <h3 class="details-title">Contact Details</h3>
-            
-            <!-- Office -->
-            <div class="contact-item-premium">
-              <div class="contact-icon-premium"><i class="ph ph-map-pin"></i></div>
-              <div class="contact-info-text">
-                <h5>Our Office</h5>
-                <p>Phase 2, 2nd Floor, HiLITE Business Park, Kozhikode, Kerala</p>
-              </div>
-            </div>
-
-            <!-- Phone -->
-            <div class="contact-item-premium interactive" data-tooltip="Click to Call">
-              <div class="contact-icon-premium"><i class="ph ph-phone"></i></div>
-              <div class="contact-info-text">
+          <div class="glass-card contact-details-card mb-8">
+            <div class="contact-method">
+              <div class="method-icon"><i class="ph ph-phone"></i></div>
+              <div class="method-content">
                 <h5>Phone</h5>
-                <a href="tel:+918921122814" class="interactive-link">+91 89211 22814</a>
+                <a href="tel:+918921122814">+91 89211 22814</a>
               </div>
-              <button class="copy-btn" onclick="copyToClipboard('+918921122814', this)" title="Copy Phone">
-                <i class="ph ph-copy"></i>
-              </button>
             </div>
-
-            <!-- Email -->
-            <div class="contact-item-premium interactive" data-tooltip="Send Email">
-              <div class="contact-icon-premium"><i class="ph ph-envelope-simple"></i></div>
-              <div class="contact-info-text">
+            <div class="contact-method">
+              <div class="method-icon"><i class="ph ph-envelope-simple"></i></div>
+              <div class="method-content">
                 <h5>Email</h5>
-                <a href="mailto:hello@replayrc.com" class="interactive-link">hello@replayrc.com</a>
+                <a href="mailto:hello@replayrc.com">hello@replayrc.com</a>
               </div>
-              <button class="copy-btn" onclick="copyToClipboard('hello@replayrc.com', this)" title="Copy Email">
-                <i class="ph ph-copy"></i>
-              </button>
             </div>
+          </div>
 
-            <!-- Working Hours -->
-            <div class="contact-item-premium">
-              <div class="contact-icon-premium"><i class="ph ph-clock"></i></div>
-              <div class="contact-info-text">
-                <h5>Working Hours</h5>
-                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
-              </div>
+          <!-- Social Integration -->
+          <div class="social-panel mt-8">
+            <h5>Follow the Play</h5>
+            <div class="social-icons-premium">
+              <a href="#" class="social-btn"><i class="ph-fill ph-instagram-logo"></i></a>
+              <a href="#" class="social-btn"><i class="ph-fill ph-youtube-logo"></i></a>
+              <a href="#" class="social-btn"><i class="ph-fill ph-facebook-logo"></i></a>
+              <a href="#" class="social-btn"><i class="ph-fill ph-twitter-logo"></i></a>
             </div>
           </div>
         </div>
 
-        <div class="contact-form-wrapper glassmorphism gs-reveal-left">
-          <form class="contact-form" id="contactForm">
-            <h3 class="form-title">Send a Request</h3>
-            <div class="form-group">
-              <input type="text" id="name" required placeholder="Your Name">
+        <!-- Contact Right: Premium Form -->
+        <div class="contact-form-panel glass-card p-10">
+          <form class="premium-form" id="contactForm">
+            <h3 class="form-title mb-8">Send a Request</h3>
+            
+            <div class="input-group">
+              <input type="text" id="name" required placeholder=" ">
               <label for="name">Your Name</label>
+              <div class="input-glow"></div>
             </div>
-            <div class="form-group">
-              <input type="email" id="email" required placeholder="Your Email">
+
+            <div class="input-group">
+              <input type="email" id="email" required placeholder=" ">
               <label for="email">Your Email</label>
+              <div class="input-glow"></div>
             </div>
-            <div class="form-group">
+
+            <div class="input-group">
               <select id="event-type" required>
                 <option value="" disabled selected>Select Occasion</option>
                 <option value="birthday">Birthday Party</option>
@@ -655,14 +634,19 @@
                 <option value="house">House Party</option>
                 <option value="other">Other</option>
               </select>
+              <div class="input-glow"></div>
             </div>
-            <div class="form-group">
-              <textarea id="message" rows="4" required placeholder="Event Details"></textarea>
+
+            <div class="input-group">
+              <textarea id="message" rows="4" required placeholder=" "></textarea>
               <label for="message">Event Details</label>
+              <div class="input-glow"></div>
             </div>
-            <button type="submit" class="submit-btn">
-              <span>Send Request</span>
-              <i class="ph ph-paper-plane-right"></i>
+
+            <button type="submit" class="submit-btn-premium">
+              <span>Send Message</span>
+              <div class="btn-glow"></div>
+              <i class="ph-bold ph-paper-plane-right"></i>
             </button>
           </form>
         </div>
