@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Replay | Premium RC Experiences</title>
+  <meta name="description" content="We bring the play to you. Real tracks. Real play. Real fun. India's First Portable RC Experience.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- GSAP for Animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- Phosphor Icons for Modern Premium Look -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="assets/logo.png" alt="Replay Logo" style="height: 100px; width: auto; filter: brightness(1.2);">
+    </div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.png" alt="Replay Logo" class="logo-img">
+      </a>
+      
+      <div class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#setups" class="nav-link">Experience</a>
+        <a href="#audience" class="nav-link">For Who</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      
+      <div class="nav-actions">
+        <a href="#contact" class="nav-cta-pill">
+          <span>Book Now</span>
+          <div class="cta-icon">
+            <i class="ph ph-arrow-right"></i>
+          </div>
+        </a>
+        
+        <button class="mobile-toggle" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <a href="#" class="nav-logo">
+          <img src="assets/logo.png" alt="Replay Logo" class="logo-img">
+        </a>
+        <button class="mobile-close"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="mobile-links">
+        <a href="#about">About</a>
+        <a href="#setups">Experience</a>
+        <a href="#audience">For Who</a>
+        <a href="#packages">Packages</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="mobile-cta-btn">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" style="background-image: url('assets/hero_bg_1777621200703.png');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-badge gs-reveal">
+        <span class="pulse-dot"></span> India's First Portable RC Experience
+      </div>
+      <h1 class="hero-title gs-reveal">
+        We Bring the<br><em>Play to You.</em>
+      </h1>
+      <p class="hero-desc gs-reveal">
+        Real tracks. Real play. Real fun.
+      </p>
+      <div class="hero-actions gs-reveal">
+        <a href="#about" class="btn-primary">
+          <span>Explore Experience</span>
+          <i class="ph-bold ph-steering-wheel"></i>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <span>Book Now</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Hook Section -->
+  <section id="hook" class="hook section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/hook_bg_1777623113440.png'); opacity: 0.5;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10 gs-reveal-up">
+      <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem;">When was the last time you <em>actually</em> played?</h2>
+      <p class="section-text mx-auto" style="font-size: 1.25rem; color: var(--text-main);">
+        Not scrolling. Not watching.<br>
+        <span style="color: var(--primary); font-weight: 600; font-size: 1.5rem; display: inline-block; margin-top: 1rem;">Actually playing.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Problem Section (Refine existing about) -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-badge gs-reveal-up">The Truth</div>
+          <h2 class="section-title gs-reveal-up">We've Forgotten <em>How to Play</em></h2>
+          <p class="section-text gs-reveal-up">
+            Somewhere between deadlines and endless scrolling, we stopped doing things and started just watching them.
+            <br><br>
+            Screens. Schedules. Same routines. Weekends feel the same.
+          </p>
+        </div>
+        <div class="about-image-wrapper gs-reveal-right">
+          <div class="about-image" style="background-image: url('assets/experience_bg_1777623144990.png');"></div>
+          <div class="about-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section id="solution" class="solution section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/solution_bg_1777623129407.png'); opacity: 0.4;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10 gs-reveal-up">
+      <div class="section-badge mx-auto">The Fix</div>
+      <h2 class="section-title" style="margin-bottom: 1rem;">We Make People <em>Play Again</em></h2>
+      <p class="section-text mx-auto" style="font-size: 1.25rem; color: var(--text-main);">
+        Not virtual. Not passive.<br>
+        <strong style="color: var(--primary);">Just loud, real-world fun.</strong><br><br>
+        With portable RC arenas that come to you.
+      </p>
+    </div>
+  </section>
+
+  <!-- How It Works / Gameplay (Map into service section) -->
+  <!-- Experience Setups Section -->
+  <section id="setups" class="setups section-padding">
+    <div class="container relative z-10">
+      <div class="section-header gs-reveal-up">
+        <div class="process-badge">
+          <span class="gold-line"></span>
+          <span>WHAT WE SET UP</span>
+        </div>
+        <h2 class="section-title">Three ways to <span class="gold-gradient">experience</span> RePlay.</h2>
+        <p class="section-text mt-4">Each setup is tailored to your space and crowd. From tight sprint tracks to rugged terrain &rarr; we build the experience around you.</p>
+      </div>
+
+      <div class="setups-grid swipe-mobile">
+        <!-- Racing Tracks -->
+        <div class="setup-card">
+          <div class="setup-bg" style="background-image: url('assets/hero_bg_1777621200703.png');"></div>
+          <div class="setup-overlay"></div>
+          <div class="setup-content">
+            <h3 class="setup-title">Racing Tracks</h3>
+            <p class="setup-desc">High-speed RC cars on custom sprint and circuit tracks. Built for head-to-head races, time trials, and pure adrenaline. The crowd goes loud.</p>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Crawling & Obstacle Courses -->
+        <div class="setup-card">
+          <div class="setup-bg" style="background-image: url('assets/features_bg_1777621277647.png');"></div>
+          <div class="setup-overlay"></div>
+          <div class="setup-content">
+            <h3 class="setup-title">Crawling & Obstacle Courses</h3>
+            <p class="setup-desc">Technical, slow-paced, and incredibly satisfying. RC crawlers navigate realistic terrain &rarr; rocks, ramps, bridges. Precision over speed.</p>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+        <!-- Custom Setups -->
+        <div class="setup-card">
+          <div class="setup-bg" style="background-image: url('assets/services_bg_1777621240356.png');"></div>
+          <div class="setup-overlay"></div>
+          <div class="setup-content">
+            <h3 class="setup-title">Custom Setups</h3>
+            <p class="setup-desc">Got a theme or a space? We customise. Branded tracks, themed obstacles, competition formats &rarr; the setup works around your event, not the other way.</p>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="process section-padding">
+    <div class="container relative z-10">
+      <div class="process-header">
+        <div class="process-badge">
+          <span class="gold-line"></span>
+          <span>THE PROCESS</span>
+        </div>
+        <h2 class="process-title">Four steps to your <span class="gold-gradient">experience</span>.</h2>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-line"></div>
+        <div class="process-steps-wrapper">
+          <!-- Step 1 -->
+          <div class="process-step" data-delay="0.1">
+            <div class="step-badge">1</div>
+            <div class="step-content">
+              <h4 class="step-title">Message Us</h4>
+              <p class="step-desc">Drop a WhatsApp message &rarr; tell us your occasion, date, and rough head count.</p>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div class="process-step" data-delay="0.2">
+            <div class="step-badge">2</div>
+            <div class="step-content">
+              <h4 class="step-title">Share Your Needs</h4>
+              <p class="step-desc">We ask a few questions about your space, theme, and crowd. No forms, no calls.</p>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div class="process-step" data-delay="0.3">
+            <div class="step-badge">3</div>
+            <div class="step-content">
+              <h4 class="step-title">We Customise</h4>
+              <p class="step-desc">We design the setup specifically for you &rarr; track layout, format, branding, everything.</p>
+            </div>
+          </div>
+          <!-- Step 4 -->
+          <div class="process-step" data-delay="0.4">
+            <div class="step-badge">4</div>
+            <div class="step-content">
+              <h4 class="step-title">We Execute</h4>
+              <p class="step-desc">We arrive, set up, run the show, and pack it all away. You just show up and enjoy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section (Emotional Highlights) -->
+  <section id="experience" class="experience section-padding relative">
+    <div class="section-bg" style="background-image: url('assets/experience_bg_1777623144990.png'); opacity: 0.15;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-header text-center">
+        <h2 class="section-title" style="margin-bottom: 3rem;">This Is What <em>Happens</em></h2>
+      </div>
+      
+      <div class="experience-grid swipe-mobile">
+        <div class="experience-card">
+          <div class="card-image" style="background-image: url('assets/experience_laughter_1777623919506.png');"></div>
+          <div class="card-overlay"></div>
+          <h3 class="card-title">Laughter</h3>
+        </div>
+        <div class="experience-card" data-delay="0.1">
+          <div class="card-image" style="background-image: url('assets/experience_bg_1777623144990.png');"></div>
+          <div class="card-overlay"></div>
+          <h3 class="card-title">High Energy</h3>
+        </div>
+        <div class="experience-card" data-delay="0.2">
+          <div class="card-image" style="background-image: url('assets/audience_bg_1777623161658.png');"></div>
+          <div class="card-overlay"></div>
+          <h3 class="card-title">Real Moments</h3>
+        </div>
+        <div class="experience-card" data-delay="0.3">
+          <div class="card-image" style="background-image: url('assets/solution_bg_1777623129407.png');"></div>
+          <div class="card-overlay"></div>
+          <h3 class="card-title">Pure Fun</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audience Section -->
+  <section id="audience" class="audience section-padding relative">
+    <div class="section-bg" style="background-image: url('assets/audience_bg_1777623161658.png'); opacity: 0.25;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-header text-center">
+        <div class="section-badge mx-auto">Who's It For?</div>
+        <h2 class="section-title"><em>Literally</em> Everyone</h2>
+      </div>
+      
+      <div class="audience-grid swipe-mobile">
+        <!-- Kids -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/energy_card_1777623707842.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-smiley"></i></div>
+            <h4>Kids</h4>
+            <p>Eyes wide, hearts racing, screaming with joy. Pure excitement.</p>
+          </div>
+        </div>
+        <!-- Families -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/moments_card_1777623726999.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-users"></i></div>
+            <h4>Families</h4>
+            <p>Finally, something the whole family enjoys together.</p>
+          </div>
+        </div>
+        <!-- Friends -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/fun_card_1777623740913.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-handshake"></i></div>
+            <h4>Friends</h4>
+            <p>Rematches and stories that last forever. Competition & memories.</p>
+          </div>
+        </div>
+        <!-- Teams -->
+        <div class="audience-card">
+          <div class="audience-bg" style="background-image: url('assets/engagement_bg_1777623177469.png');"></div>
+          <div class="audience-overlay"></div>
+          <div class="audience-content">
+            <div class="audience-icon"><i class="ph-fill ph-briefcase"></i></div>
+            <h4>Teams</h4>
+            <p>The team-building that people actually want to do.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Section -->
+  <section id="engagement" class="engagement section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/engagement_bg_1777623177469.png'); opacity: 0.3;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10 gs-reveal-up">
+      <h2 class="section-title">Easy to Start.<br><em>Impossible to Stop.</em></h2>
+      <p class="section-text mx-auto mt-4" style="font-size: 1.25rem;">
+        One race becomes five.<br>Five becomes a tournament.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seamless Experience (Features Section) -->
+  <section id="features" class="features section-padding">
+    <div class="features-bg" style="background-image: url('assets/features_bg_1777621277647.png');"></div>
+    <div class="features-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-header text-center gs-reveal-up">
+        <div class="section-badge mx-auto">Seamless Experience</div>
+        <h2 class="section-title">We Handle Everything.<br><em>You Just Enjoy.</em></h2>
+      </div>
+
+      <div class="features-wrapper swipe-mobile">
+        <div class="feature-box">
+          <div class="feature-bg" style="background-image: url('assets/auto_bg_1777621262310.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-rocket-launch"></i></div>
+            <h4>Lightning Setup</h4>
+            <p>Full arena ready in under 30 minutes.</p>
+          </div>
+        </div>
+        <div class="feature-box" data-delay="0.1">
+          <div class="feature-bg" style="background-image: url('assets/hero_bg_1777621200703.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-car"></i></div>
+            <h4>Equipment Included</h4>
+            <p>Cars, tracks - everything travels with us.</p>
+          </div>
+        </div>
+        <div class="feature-box" data-delay="0.2">
+          <div class="feature-bg" style="background-image: url('assets/solution_bg_1777623129407.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-coffee"></i></div>
+            <h4>Zero Effort</h4>
+            <p>Just invite people, we do the rest for the host.</p>
+          </div>
+        </div>
+        <div class="feature-box" data-delay="0.3">
+          <div class="feature-bg" style="background-image: url('assets/hook_bg_1777623113440.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-broom"></i></div>
+            <h4>Clean Exit</h4>
+            <p>We pack up, you keep the memories.</p>
+          </div>
+        </div>
+        <!-- New Cards -->
+        <div class="feature-box" data-delay="0.4">
+          <div class="feature-bg" style="background-image: url('assets/about_bg_1777621219356.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-users-three"></i></div>
+            <h4>Expert Operators</h4>
+            <p>Dedicated crew to manage the race and assist players.</p>
+          </div>
+        </div>
+        <div class="feature-box" data-delay="0.5">
+          <div class="feature-bg" style="background-image: url('assets/contact_bg_1777621293834.png');"></div>
+          <div class="feature-overlay"></div>
+          <div class="feature-content">
+            <div class="feature-icon"><i class="ph ph-paint-brush"></i></div>
+            <h4>Custom Branding</h4>
+            <p>Track and arena elements tailored to your event theme.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasions Section -->
+  <section id="occasions" class="occasions section-padding text-center relative">
+    <div class="section-bg" style="background-image: url('assets/occasions_bg_1777623194608.png'); opacity: 0.15;"></div>
+    <div class="section-overlay"></div>
+    <div class="container relative z-10">
+      <div class="section-header text-center mb-5">
+        <h2 class="section-title">Every Occasion is a<br><span class="gold-gradient">Replay Occasion</span></h2>
+        <p class="section-text mx-auto mt-4">From private celebrations to corporate nights, every event becomes unforgettable.</p>
+      </div>
+      
+      <div class="occasions-grid swipe-mobile">
+        <!-- Birthday Parties -->
+        <div class="occasion-card">
+          <div class="occasion-bg" style="background-image: url('assets/laughter_card_1777623690589.png');"></div>
+          <div class="occasion-overlay"></div>
+          <div class="occasion-content">
+            <h4>Birthday Parties</h4>
+            <p>Luxury celebrations with racing vibes.</p>
+          </div>
+        </div>
+        <!-- Office Events -->
+        <div class="occasion-card">
+          <div class="occasion-bg" style="background-image: url('assets/services_bg_1777621240356.png');"></div>
+          <div class="occasion-overlay"></div>
+          <div class="occasion-content">
+            <h4>Office Events</h4>
+            <p>Modern entertainment for team gatherings.</p>
+          </div>
+        </div>
+        <!-- Festivals -->
+        <div class="occasion-card">
+          <div class="occasion-bg" style="background-image: url('assets/occasions_bg_1777623194608.png');"></div>
+          <div class="occasion-overlay"></div>
+          <div class="occasion-content">
+            <h4>Festivals</h4>
+            <p>Electric crowds and racing atmosphere.</p>
+          </div>
+        </div>
+        <!-- House Parties -->
+        <div class="occasion-card">
+          <div class="occasion-bg" style="background-image: url('assets/moments_card_1777623726999.png');"></div>
+          <div class="occasion-overlay"></div>
+          <div class="occasion-content">
+            <h4>House Parties</h4>
+            <p>Stylish indoor parties with gaming vibes.</p>
+          </div>
+        </div>
+        <!-- Weekend Fun -->
+        <div class="occasion-card">
+          <div class="occasion-bg" style="background-image: url('assets/fun_card_1777623740913.png');"></div>
+          <div class="occasion-overlay"></div>
+          <div class="occasion-content">
+            <h4>Weekend Fun</h4>
+            <p>Casual racing and nightlife atmosphere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages section-padding relative">
+    <div class="container relative z-10">
+      <div class="section-header text-center">
+        <div class="section-badge mx-auto">PACKAGES</div>
+        <h2 class="section-title">Pick a starting point.<br><em>We'll customise the rest.</em></h2>
+        <p class="section-text mx-auto mt-4">
+          No fixed pricing — every experience is tailored. These are just starting points. Tell us your space, your crowd, your vibe.
+        </p>
+      </div>
+
+      <div class="packages-grid swipe-mobile">
+        <!-- Starter Experience -->
+        <div class="package-card">
+          <div class="package-visuals">
+            <div class="package-bg" style="background-image: url('assets/hook_bg_1777623113440.png');"></div>
+            <div class="package-overlay"></div>
+          </div>
+          <div class="package-content relative z-10">
+            <h3 class="package-name">Starter Experience</h3>
+            <p class="package-subtitle">Perfect for small groups & casual play</p>
+            <ul class="package-features">
+              <li><i class="ph ph-check-circle"></i> 1 RC track setup</li>
+              <li><i class="ph ph-check-circle"></i> Up to 20 participants</li>
+              <li><i class="ph ph-check-circle"></i> 2–3 hour experience</li>
+              <li><i class="ph ph-check-circle"></i> Operator included</li>
+              <li><i class="ph ph-check-circle"></i> All equipment provided</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi%20Replay!%20I'm%20interested%20in%20the%20Starter%20Experience.%20Can%20we%20customise%20it?" class="package-btn" target="_blank">Customise on WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Event Package (Most Popular) -->
+        <div class="package-card featured" data-delay="0.1">
+          <div class="package-visuals">
+            <div class="package-bg" style="background-image: url('assets/occasions_bg_1777623194608.png');"></div>
+            <div class="package-overlay"></div>
+          </div>
+          <div class="package-tag">MOST POPULAR</div>
+          <div class="package-content relative z-10">
+            <h3 class="package-name">Event Package</h3>
+            <p class="package-subtitle">For corporate & college events</p>
+            <ul class="package-features">
+              <li><i class="ph ph-check-circle"></i> 2 RC setups (race + crawl)</li>
+              <li><i class="ph ph-check-circle"></i> Up to 100 participants</li>
+              <li><i class="ph ph-check-circle"></i> Half or full day</li>
+              <li><i class="ph ph-check-circle"></i> 2 operators + MC (if needed)</li>
+              <li><i class="ph ph-check-circle"></i> Custom branding on track</li>
+              <li><i class="ph ph-check-circle"></i> Competition format available</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi%20Replay!%20We're%20looking%20at%20the%20Event%20Package%20for%20our%20upcoming%20corporate/college%20event.%20Let's%20talk!" class="package-btn" target="_blank">Customise on WhatsApp</a>
+          </div>
+          <div class="card-glow"></div>
+        </div>
+
+        <!-- Full Experience -->
+        <div class="package-card" data-delay="0.2">
+          <div class="package-visuals">
+            <div class="package-bg" style="background-image: url('assets/solution_bg_1777623129407.png');"></div>
+            <div class="package-overlay"></div>
+          </div>
+          <div class="package-content relative z-10">
+            <h3 class="package-name">Full Experience</h3>
+            <p class="package-subtitle">For large events & exhibitions</p>
+            <ul class="package-features">
+              <li><i class="ph ph-check-circle"></i> 3+ RC setups</li>
+              <li><i class="ph ph-check-circle"></i> Unlimited participants</li>
+              <li><i class="ph ph-check-circle"></i> Multi-day available</li>
+              <li><i class="ph ph-check-circle"></i> Full crew on-site</li>
+              <li><i class="ph ph-check-circle"></i> Fully themed setup</li>
+              <li><i class="ph ph-check-circle"></i> Leaderboard & prizes</li>
+            </ul>
+            <a href="https://wa.me/919999999999?text=Hi%20Replay!%20We're%20planning%20a%20large-scale%20event%20and%20want%20the%20Full%20Experience.%20Please%20get%20in%20touch." class="package-btn" target="_blank">Customise on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="contact-bg" style="background-image: url('assets/contact_bg_1777621293834.png');"></div>
+    <div class="contact-overlay"></div>
+    <div class="container relative z-10">
+      <div class="contact-wrapper">
+        <div class="contact-info gs-reveal-right">
+          <div class="section-badge">Play, Delivered</div>
+          <h2 class="section-title">You Bring the People.<br><em>We'll Bring the Play.</em></h2>
+          <p class="section-text mb-6">We bring the gear, energy, and game plan. Let's create something unforgettable — together.</p>
+          
+          <div class="hero-actions mt-6" style="margin-bottom: 2rem;">
+            <a href="#contactForm" class="btn-primary" onclick="document.getElementById('contactForm').scrollIntoView({behavior: 'smooth'})">
+              <span>Book Now</span>
+            </a>
+            <a href="mailto:hello@replayrc.com" class="btn-secondary">
+              <span>Let's Talk</span>
+            </a>
+          </div>
+          
+          <div class="contact-details-premium mt-8">
+            <h3 class="details-title">Contact Details</h3>
+            
+            <!-- Office -->
+            <div class="contact-item-premium">
+              <div class="contact-icon-premium"><i class="ph ph-map-pin"></i></div>
+              <div class="contact-info-text">
+                <h5>Our Office</h5>
+                <p>Phase 2, 2nd Floor, HiLITE Business Park, Kozhikode, Kerala</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item-premium interactive" data-tooltip="Click to Call">
+              <div class="contact-icon-premium"><i class="ph ph-phone"></i></div>
+              <div class="contact-info-text">
+                <h5>Phone</h5>
+                <a href="tel:+918921122814" class="interactive-link">+91 89211 22814</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('+918921122814', this)" title="Copy Phone">
+                <i class="ph ph-copy"></i>
+              </button>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item-premium interactive" data-tooltip="Send Email">
+              <div class="contact-icon-premium"><i class="ph ph-envelope-simple"></i></div>
+              <div class="contact-info-text">
+                <h5>Email</h5>
+                <a href="mailto:hello@replayrc.com" class="interactive-link">hello@replayrc.com</a>
+              </div>
+              <button class="copy-btn" onclick="copyToClipboard('hello@replayrc.com', this)" title="Copy Email">
+                <i class="ph ph-copy"></i>
+              </button>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="contact-item-premium">
+              <div class="contact-icon-premium"><i class="ph ph-clock"></i></div>
+              <div class="contact-info-text">
+                <h5>Working Hours</h5>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper glassmorphism gs-reveal-left">
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-title">Send a Request</h3>
+            <div class="form-group">
+              <input type="text" id="name" required placeholder="Your Name">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required placeholder="Your Email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="form-group">
+              <select id="event-type" required>
+                <option value="" disabled selected>Select Occasion</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Office Event</option>
+                <option value="festival">Festival / Event</option>
+                <option value="house">House Party</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="message" rows="4" required placeholder="Event Details"></textarea>
+              <label for="message">Event Details</label>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span>Send Request</span>
+              <i class="ph ph-paper-plane-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <img src="assets/logo.png" alt="Replay Logo" class="logo-img" style="height: 40px;">
+          </a>
+          <p class="footer-desc mt-4">We bring the play to you.<br>Real tracks. Real play. Real fun.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="#about">About</a>
+          <a href="#setups">Experience</a>
+          <a href="#audience">For Who</a>
+          <a href="#packages">Packages</a>
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact">Book Now</a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-youtube-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Replay RC Experiences. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
